@@ -6,6 +6,10 @@ ReadyPack was developed with AI assistance. It is separate from private business
 
 ![ReadyPack desktop screenshot](docs/screenshots/desktop.png)
 
+## Live demo
+
+[Open ReadyPack](https://gerald219.github.io/NEW_PROJECT_2026/) — no account needed.
+
 ## Try it locally
 
 Requirements: Node.js 22 or newer; Node 24 is used for validation and CI.
@@ -56,7 +60,7 @@ GitHub Actions runs the core tests and browser checks. [Validation results](docs
 - [Desktop screenshot](docs/screenshots/desktop.png)
 - [Mobile screenshot](docs/screenshots/mobile.png)
 - [Item form screenshot](docs/screenshots/item-form.png)
-- [Prepared profile introduction](docs/profile/README.md)
+- [Published profile introduction](https://github.com/Gerald219)
 
 ## Implementation
 
@@ -73,7 +77,7 @@ User-entered names are rendered with `textContent`. Imports require the expected
 
 ## Hosting and limitations
 
-The repository is ready for GitHub Pages: choose **Settings → Pages → Deploy from a branch → main → / (root)**. Pages must be enabled before a live demo URL is advertised. The profile introduction is prepared for a separate public repository named `Gerald219`; publishing those profile settings is a separate step.
+GitHub Pages serves this demo from **main → / (root)**. The [live demo](https://gerald219.github.io/NEW_PROJECT_2026/) and [profile introduction](https://github.com/Gerald219) are published.
 
 This is a browser-only demonstration, not a production client service. It has no backend, sign-in, cloud database, or multi-device synchronization. Browser storage can be cleared and is not a secure store for personal documents or client records. Cross-browser, assistive-technology, and physical-device testing are still follow-up work.
 
