@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ReadyPack: a packing checklist portfolio demo with fictional data, browser storage, and tested JavaScript logic.">
+  <title>ReadyPack — Packing checklist demo</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#checklist">Skip to checklist</a>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="ReadyPack home"><span class="brand-mark" aria-hidden="true">R</span> ReadyPack<span class="demo-tag">PORTFOLIO DEMO</span></a>
+    <a class="source-link" href="https://github.com/Gerald219/NEW_PROJECT_2026">View source <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="page">
+    <section class="intro" aria-labelledby="page-title">
+      <div><p class="eyebrow">A LITTLE PLANNING. A LIGHTER DEPARTURE.</p><h1 id="page-title">Pack with a clear head.</h1><p class="subheading">Keep the essentials together. Check things off. Get going.</p></div>
+      <div class="trip-note"><span class="trip-icon" aria-hidden="true">↗</span><div><strong>Your next trip</strong><span>Fictional sample checklist</span></div></div>
+    </section>
+    <p id="storage-warning" class="warning" role="status" hidden></p>
+    <section class="summary" aria-label="Packing progress">
+      <div class="metric progress-metric"><div><span class="metric-label">READY TO GO</span><strong id="percent">0%</strong></div><progress id="progress" value="0" max="100" aria-label="Checklist completion"></progress><span id="progress-caption">0 of 0 items packed</span></div>
+      <div class="metric"><span class="metric-label">PACKED</span><strong id="packed-count">0</strong><span>already in the bag</span></div>
+      <div class="metric"><span class="metric-label">TO PACK</span><strong id="remaining-count">0</strong><span>a little left to do</span></div>
+      <div class="metric essential-metric"><span class="metric-label">ESSENTIALS LEFT</span><strong id="essential-count">0</strong><span>check these before leaving</span></div>
+    </section>
+    <div class="workspace">
+      <aside class="sidebar" aria-label="Filter by category"><h2>YOUR CHECKLIST</h2><div id="categories" class="categories"></div><div class="sidebar-note"><span aria-hidden="true">✦</span><p>Small details,<br>smooth departures.</p><span>Mark anything you can't leave without as essential.</span></div></aside>
+      <section id="checklist" class="checklist-panel" aria-labelledby="list-heading" tabindex="-1">
+        <div class="list-header"><div><h2 id="list-heading">Everything you need</h2><p id="item-count">Your packing list</p></div><button type="button" class="primary" id="add-item"><span aria-hidden="true">+</span> Add item</button></div>
+        <div class="filters"><label class="search"><span class="sr-only">Search items</span><input type="search" id="search" placeholder="Search your list…" maxlength="100"></label><label><span class="sr-only">Packing status</span><select id="status"><option value="all">All statuses</option><option value="unpacked">To pack</option><option value="packed">Packed</option></select></label><label class="essential-filter"><input type="checkbox" id="essential-only"> Essentials only</label></div>
+        <ul id="items" class="items" aria-label="Packing items"></ul>
+        <div id="empty-state" class="empty-state" hidden><span aria-hidden="true">◎</span><h3>No items here yet</h3><p id="empty-description">Try a different filter or add an item.</p></div>
+        <div class="list-footer"><span><span class="small-dot" aria-hidden="true"></span> Stored in this browser</span><div><button type="button" id="export">Export checklist</button><button type="button" id="import">Import checklist</button><button type="button" id="reset">Reset demo</button></div></div>
+      </section>
+    </div>
+    <footer class="page-footer"><span>ReadyPack · A separate portfolio demonstration by Gerald Mulero, built with AI assistance.</span><span>Fictional data · No account needed</span></footer>
+  </main>
+  <div id="notice" class="notice" role="status" hidden><span id="notice-text"></span><button id="undo" type="button" hidden>Undo</button><button id="dismiss" type="button" aria-label="Dismiss notification">×</button></div>
+  <input type="file" id="import-file" accept="application/json,.json" hidden>
+  <dialog id="item-dialog" aria-labelledby="dialog-title">
+    <form id="item-form"><div class="dialog-heading"><h2 id="dialog-title">Add a packing item</h2><button type="button" id="cancel-icon" class="icon-button" aria-label="Close item form">×</button></div>
+      <label>Item name<input id="item-title" name="title" required maxlength="80" autocomplete="off" placeholder="e.g. Phone charger"></label>
+      <div class="form-row"><label>Category<select id="item-category" name="category"></select></label><label>Quantity<input id="item-quantity" name="quantity" type="number" min="1" max="99" step="1" value="1" required></label></div>
+      <label class="check-label"><input id="item-essential" type="checkbox" name="essential"> Essential — I can't leave without this</label>
+      <p id="form-error" class="form-error" role="alert" hidden></p>
+      <div class="dialog-actions"><button type="button" id="cancel">Cancel</button><button type="submit" class="primary">Save item</button></div>
+    </form>
+  </dialog>
+</body>
+</html>
