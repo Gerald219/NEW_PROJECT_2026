@@ -1,5 +1,7 @@
 # ReadyPack — packing checklist demo
 
+**Also in this portfolio:** [Bilingual Intake Lab](chatbot/README.md) — a standalone bilingual guided-intake demo with structured-response validation and QA evidence. [Try it live](https://gerald219.github.io/NEW_PROJECT_2026/chatbot/).
+
 A small, independent portfolio demonstration of a packing checklist. It follows the packing-project idea originally recorded in this repository; that note is preserved in [docs/original-project-note.md](docs/original-project-note.md).
 
 ReadyPack was developed with AI assistance. It is separate from private business work and uses fictional sample items.
