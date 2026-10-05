@@ -33,7 +33,7 @@ The public catalog contains fictional examples for routing only. It does not est
 
 ## Contributions and provenance
 
-Gerald supplied four source files from his private AI-assisted project: `AdaptiveIntake.jsx`, `assistantPrompt.js`, `situationReasoning.js`, and `serviceRecognition.js`. They provide direct evidence of the original project's bilingual prompts, service-scoring engine, structured LLM calls, and staged intake logic. These files alone do not prove sole authorship or employment as a professional AI evaluator.
+This adaptation is based on four source files Gerald supplied from his AI-assisted legal-intake project: `AdaptiveIntake.jsx`, `assistantPrompt.js`, `situationReasoning.js`, and `serviceRecognition.js`. The supplied code implements bilingual prompts, service scoring, structured LLM calls, and a staged intake workflow.
 
 The original React UI depends on additional private components and backend functions that were not supplied. This public version is an **AI-assisted JavaScript adaptation**, with a new interface and fictional catalog. It preserves the original architectural ideas while replacing private dependencies and making demonstration boundaries explicit. It is not an exact visual copy of the private application.
 
