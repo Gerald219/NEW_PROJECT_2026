@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gerald Mulero's bilingual guided-intake portfolio demo, adapted from AI-assisted project work.">
+  <title>Bilingual Intake Lab · Gerald Mulero</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="./"><span class="brand-mark" aria-hidden="true">↗</span> Intake Lab<span class="brand-label">PORTFOLIO DEMO</span></a><a href="https://github.com/Gerald219/NEW_PROJECT_2026/tree/main/chatbot">View source <span aria-hidden="true">↗</span></a></header>
+  <main class="layout">
+    <aside class="intro">
+      <p class="eyebrow">BILINGUAL SERVICE NAVIGATION</p>
+      <h1>A clearer path.<br>A better handoff.</h1>
+      <p class="lead">A guided conversation that turns everyday requests into an organized intake summary.</p>
+      <div class="author"><span class="avatar">GM</span><div><strong>Gerald Mulero</strong><span>Legal operations · AI-assisted development</span></div></div>
+      <section class="samples" aria-labelledby="sample-title"><h2 id="sample-title">Take it for a test drive</h2><div id="samples"></div></section>
+      <div class="privacy"><strong id="privacy-title">Fictional examples. Local conversation.</strong><p id="privacy-copy">No live AI, uploads, appointment bookings, or staff notifications. Use sample information only. Nothing is saved after a page reload.</p></div>
+      <details class="technical"><summary>Behind the conversation</summary><p>Rules match services; replay fixtures demonstrate validated structured model responses. A state machine owns the intake steps.</p><p><a href="https://github.com/Gerald219/NEW_PROJECT_2026/blob/main/chatbot/README.md">Architecture, tests & contributions ↗</a></p><pre id="inspector" aria-label="Routing inspection"></pre></details>
+    </aside>
+    <section class="chat" aria-labelledby="chat-title">
+      <div class="chat-top"><div class="chat-identity"><span class="assistant-icon" aria-hidden="true">✦</span><div><h2 id="chat-title">Your intake guide</h2><p id="mode-status">Automated demo · rules mode</p></div></div><label class="language-label"><span class="sr-only">Language</span><select id="language"><option value="en">English</option><option value="es">Español</option></select></label></div>
+      <nav class="journey" aria-label="Intake progress"><ol id="journey"></ol></nav>
+      <div id="transcript" role="log" aria-live="polite" aria-relevant="additions text" aria-label="Conversation"></div>
+      <div class="action-area"><div id="actions"></div><form id="request-form"><label id="request-label" for="request">What do you need?</label><div class="compose"><textarea id="request" maxlength="500" rows="2" placeholder="Try: I lost my driver's license" required></textarea><button id="send" type="submit" class="primary">Continue <span aria-hidden="true">→</span></button></div><p class="input-hint" id="input-hint">Sample requests only · up to 500 characters</p></form></div>
+      <div class="chat-footer"><button id="browse" type="button">Browse services</button><button id="human" type="button">Team review</button><button id="reset" type="button">Start over</button></div>
+    </section>
+  </main>
+  <footer class="site-footer"><span>Built with AI assistance · Adapted from private project work</span><a href="https://github.com/Gerald219">Gerald Mulero on GitHub ↗</a></footer>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

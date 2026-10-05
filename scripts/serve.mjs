@@ -8,7 +8,7 @@ const types = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascrip
 const server = http.createServer(async (request, response) => {
   try {
     const pathname = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
-    const relative = pathname === '/' ? 'index.html' : pathname.replace(/^\/+/, '');
+    const relative = (pathname.endsWith('/') ? `${pathname}index.html` : pathname).replace(/^\/+/, '');
     const filename = path.resolve(root, relative);
     if (!filename.startsWith(root) || relative.split('/').some(part => part.startsWith('.'))) {
       response.writeHead(403).end('Forbidden');
