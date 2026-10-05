@@ -1,6 +1,6 @@
 # Validation record — 2026-10-05
 
-These checks were performed during AI-assisted development of the public adaptation. They do not certify Gerald's unaided coding ability or the private application's correctness.
+These checks cover the public AI-assisted adaptation. They do not establish the private application's correctness or production readiness.
 
 ## Passed locally
 
@@ -20,4 +20,11 @@ The browser suite includes an English lost-license flow and a Spanish flow with 
 
 Live model accuracy; genuine semantic reasoning; production backend behavior; real team chat or scheduling; legal correctness; Firefox/Safari compatibility; full WCAG conformance; screen-reader behavior; physical-device touch interaction; production security; and real-user outcome improvements.
 
-The source files and scripts make the checks reproducible. GitHub Actions is configured to repeat the core and browser suites. Hosted verification is recorded separately when completed.
+The source files and scripts make the checks reproducible. GitHub Actions repeats the core and browser suites.
+
+## Hosted verification
+
+- [Main-branch CI](https://github.com/Gerald219/NEW_PROJECT_2026/actions/runs/37275082360) passed all core and both browser suites.
+- [GitHub Pages deployment](https://github.com/Gerald219/NEW_PROJECT_2026/actions/runs/37275081549) completed successfully.
+- The [public demo](https://gerald219.github.io/NEW_PROJECT_2026/chatbot/) was accessed without a GitHub login and passed the same **18 browser workflow checks**, including English and Spanish intake, replay validation, summary export, failure recovery, mobile layout, and no submission requests. Browser access used the execution environment's network proxy; transport security was not audited.
+- The profile introduction links directly to the source and live demo.
